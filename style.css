@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./assets/background-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.gamja-flower-regular {
+    font-family: "Gamja Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.borders{
+    border: 1px solid red;
+}
+.main-box{
+    height: 80%;
+    padding: 100px 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(25, 5, 210, 0.612);
+    border-radius: 24px;
+    box-shadow: 0 0 20px rgba(25, 5, 210, 0.612);
+}
+.main-box>h1{
+    font-weight: 900;
+    font-size: 72px;
+    padding: 20px 30px;
+    border-radius: 24px;
+    letter-spacing: 0.2em;
+    background-color: rgba(0, 0, 255, 0.783);
+}
+#result-area{
+    font-weight: 600;
+    font-size: 35px;
+    padding: 20px;
+    border-radius: 24px;
+    background-color: rgba(0, 0, 255, 0.783);
+}
+.input-area{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button:hover{
+    scale: 1.1;
+}
+.button-area>button{
+    margin: 0px 10px;
+    min-width: 63px;
+    text-transform: uppercase;
+}
+#chance-area{
+    text-align: left;
+    align-self: first baseline;
+    margin-left: 6em;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 0 1em;
+    background-color: rgba(0, 0, 255, 0.783);
+    border-radius: 12px;
+}
+#user-input{
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.722);
+    width: 80%;
+    border: none;
+    border-top: 1px solid gray;
+    cursor: pointer;
+    min-height: 40px;
+    border-radius: 24px;
+}
+#user-input:focus{
+    border-top: none;
+    transition: 0.3s;
+    border-bottom: 1.5px solid gray;
+    transition: 0.3s;
+    background-color: white;
+}
+/* remove input spin arrows */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
