@@ -91,7 +91,7 @@ button:hover{
     padding: 5px;
     border-radius: 12px;
     align-self: self-end;
-    margin-right: 60px;
+    margin-right: 90px;
 }
 /* remove input spin arrows */
 input[type=number]::-webkit-outer-spin-button,
