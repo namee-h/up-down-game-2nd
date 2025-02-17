@@ -14,6 +14,7 @@ let userInput = document.getElementById("user-input");
 let resultArea = document.getElementById("result-area");
 let resetButton = document.getElementById("reset-button");
 let rightAnswer = document.getElementById("right-answer");
+let inputList = document.getElementById("input-list");
 let chances = 3;
 let gameOver = false;
 let chanceArea = document.getElementById("chance-area");
@@ -58,12 +59,13 @@ function play() {
   } else if (userValue > computerNum) {
     resultArea.textContent = `${userValue} : ⇓ ⬇️ ⇓`;
   } else {
-    resultArea.textContent = `${userValue} : 👏🏻👏🏻🙆🏻 정답입니다!! 🙆🏻👏🏻👏🏻`;
+    resultArea.textContent = `${userValue} : 👏🏻 정답 👏🏻`;
     gameOver = true;
   }
 
   history.push(userValue);
   userInput.value = "";
+  inputList.textContent = `[${history}]`;
 
   if (chances < 1) {
     gameOver = true;
@@ -79,6 +81,7 @@ function reset() {
   // 새로운 번호 생성
   pickRandomNum();
   resultArea.textContent = "결과값이 여기 나옵니다.";
+  inputList.textContent = "입력한 숫자가 나옵니다";
   chances = 3;
   gameOver = false;
   playButton.disabled = false;

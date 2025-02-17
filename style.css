@@ -32,7 +32,16 @@ body{
 }
 .main-box>h1{
     font-weight: 900;
-    font-size: 72px;
+    font-size: 4em;
+    padding: 20px 30px;
+    border-radius: 24px;
+    letter-spacing: 0.2em;
+    background-color: rgba(0, 0, 255, 0.783);
+}
+.sub-title{
+    display: none;
+    font-weight: 900;
+    font-size: 4em;
     padding: 20px 30px;
     border-radius: 24px;
     letter-spacing: 0.2em;
@@ -101,4 +110,43 @@ input[type=number]::-webkit-inner-spin-button {
 }
 input[type=number] {
     -moz-appearance:textfield;
+}
+
+@media (max-width:1180px) {
+    .main-box>h1{
+        display: none;
+    }
+    .sub-title{
+        display: block;
+    }
+}
+@media (max-width:760px) {
+    .main-box{
+        padding: 20px;
+        width: 85%;
+    }
+    .sub-title{
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+    #result-area{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .input-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #chance-area{
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 1rem;
+        align-self: center;
+    }
+    #right-answer{
+        align-self: center;
+        margin-right: 0;
+    }
 }
