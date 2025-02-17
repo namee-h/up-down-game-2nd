@@ -80,7 +80,7 @@ function reset() {
   userInput.value = "";
   // 새로운 번호 생성
   pickRandomNum();
-  resultArea.textContent = "결과값이 여기 나옵니다.";
+  resultArea.textContent = "결과가 여기 나옵니다";
   inputList.textContent = "입력한 숫자가 나옵니다";
   chances = 3;
   gameOver = false;
